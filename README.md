@@ -81,7 +81,23 @@ analysis/
   Returns_Analysis.xlsx     18-sheet workbook: KPIs, scorecard, tests, model
                             comparison, clusters, rules, forecast, decision model,
                             Better Analyst cross-check and order-level data
+code/
+  01_prepare_order_level_data.py          Join the tables, build the order-level returned flag
+  02_return_drivers_tests_and_models.py   Data-quality checks, chi-square / Cramér's V by segment,
+                                          review tests, 5 classifiers, binomial test, monthly trend
+  03_category_chart_data.py               Corrected category return-rate table for charting
+  04_monthly_forecast_partial_month.py    Linear-trend forecast with the partial final month excluded
+  05_review_rating_distribution_test.py   Review-rating distribution, returned vs kept orders
+  exploratory/
+    retention_growth_analysis.py          Earlier retention/growth direction, before the refocus on returns
 ```
+
+The scripts are the Python generated and run in the Better Analyst AI analytics
+tool (the independent cross-check in Section 6 of the report), exported verbatim
+with a header describing each one. Data paths point to that tool's sandbox; change
+them to a local data folder to run. Requires `pandas`, `numpy`, `scipy`,
+`scikit-learn` and `matplotlib` (the exploratory script also uses `statsmodels`
+and `xgboost`).
 
 ## Why this is here
 

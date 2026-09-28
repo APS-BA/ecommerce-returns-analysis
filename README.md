@@ -76,7 +76,8 @@ in the return rate).
 report/
   Returns_Report.pdf        Final report (10 pages)
   Returns_Report.docx       Editable version
-  Project_Proposal.pptx     Original proposal deck
+  Project_Proposal.pdf      Original proposal deck (PDF, previews on GitHub)
+  Project_Proposal.pptx     Original proposal deck (editable)
 analysis/
   Returns_Analysis.xlsx     18-sheet workbook: KPIs, scorecard, tests, model
                             comparison, clusters, rules, forecast, decision model,
